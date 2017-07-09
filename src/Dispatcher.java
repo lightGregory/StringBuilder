@@ -1,22 +1,25 @@
 import java.util.*;
 
 public class Dispatcher {
+	static String[] name = {"Greg"};
+	Dispatcher(String[] name){
+		this.name = name;
+		
+	}
 
 	public static void main(String[] args)  {
-	 StringBuffer sb = new StringBuffer("Forefell");
-	
-	 int integerVariable = 10;
-	 char g = '2';
-	 System.out.println("and what?");
-
+	 String[] sb = name;
+	 String[] s =sb;
+	 input(s);
+	System.out.println(s.getClass().getSimpleName());
 }
-	public static void  input(char[] c) {
+	public static void  input(String[] c) {
         for(int i=0;i<c.length;i++) {
         
-        	if(c[i]==0) {
+        	if(c[i]==null) {
         		break;
         	}
-             if(c[i]=='g' || c[i] == 'G') {
+             if(c[i]=="g" || c[i] == "G") {
             	 System.out.println("   *****");
             	 System.out.println(" **    **");
             	 System.out.println(" **");
@@ -24,7 +27,7 @@ public class Dispatcher {
             	 System.out.println(" **    **");
             	 System.out.println("  *****");
             	 System.out.println(" ");
-             }else if(c[i]=='r' || c[i] == 'R') {
+             }else if(c[i]=="r" || c[i] == "R") {
             	 System.out.println(" *******");
             	 System.out.println(" **    **");
             	 System.out.println(" ******");
@@ -32,7 +35,7 @@ public class Dispatcher {
             	 System.out.println(" **   ** ");
             	 System.out.println(" **    **");
             	 System.out.println(" ");
-             }else if(c[i]=='e' || c[i] == 'E') {
+             }else if(c[i]=="e" || c[i] == "E") {
             	 System.out.println(" *******");
             	 System.out.println(" **");
             	 System.out.println(" *******");
